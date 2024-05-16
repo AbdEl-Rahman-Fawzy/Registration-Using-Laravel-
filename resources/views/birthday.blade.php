@@ -3,17 +3,20 @@
 <head>
     <title>User Birthday Form</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{asset('front-assets')}}/edit.css">
 
 </head>
 <body>
-    <h2>Enter Your Birthday</h2>
+    
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <h2>Enter Your Birthday</h2><br>
         <label for="birthday">Birthday:</label><br>
         <input type="date" id="birthday" name="birthday"><br><br>
         <input type="submit" id="submitBtn" name="submit" value="Submit">
+        <p id="birthdayMsg"></p>
     </form>
 
-    <p id="birthdayMsg"></p>
+    
 </body>
 <script>
     $(document).ready(function(){
