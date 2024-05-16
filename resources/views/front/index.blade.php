@@ -16,53 +16,38 @@
             <h2>Registeration</h2>
             
         </div>
-        <form method="post">
-            <label for="fullname">Fullname:</label>
-            <input type="text" name="fullname" id="fullname" placeholder="Fullname" required>
-            
-            <br>
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username" placeholder="Username" required>
-            
-            <br>
-            <label for="birth">Date Of Birth:</label>
-            <input type="date" name="birth" id="birth" placeholder="Date Of Birth" required>
-            <br>
-            <button type="button" id="getceleb"  >Celebrities With Your Birthday</button>
-            <br>
-            <p id="answer"></p>
+        <h1>Registration Form</h1>
+        <form action="/register" method="POST">
+        @csrf
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" id="full_name" name="full_name"><br><br>
 
-            
-            <label for="phone">Phone Number:</label>
-            <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
-            <br>
-            
-            <label for="adress">Adress:</label>
-            <input type="text" name="adress" id="adress" placeholder="Adress" required>
-            <br>
-            
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password" placeholder="Password" required>
-            <br>
-            
-            <label for="cpassword">Confirm password:</label>
-            <input type="password" name="cpassword" id="cpassword" placeholder="Confirm password" required>
-            <br>
-            
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Email" required>
-            <br>
-            
-            <label for="img">Select image:</label>
-            <input type="file" id="img" name="img" accept="image/*">
-            <br>
-            <br>
-            <input type="submit" name="sub" id="sub" value="Register">
+        <label for="user_name">Username:</label><br>
+        <input type="text" id="user_name" name="user_name"><br><br>
 
-        </form>
+        <label for="birthdate">Birthdate:</label><br>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="pwd">Confirm Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="image">Image:</label><br>
+        <input type="file" id="image" name="image"><br><br>
+
+        <button type="submit">Register</button>
+    </form>
         <div id="errorMessages"></div>
         <script> src="{{asset('front-assets')}}/javascript/clientValidations.js"</script>
-        <script  src="{{asset('front-assets')}}/javascript/API_Ops.js"></script>
+        <!-- <script  src="{{asset('front-assets')}}/javascript/API_Ops.js"></script>-->
 
         <footer>
             <h4>&copy; 2024 <span>FCAI-CU</span>. All rights reserved</h4>
