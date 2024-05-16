@@ -1,0 +1,113 @@
+:root {
+    --darkblue: #0C243C;
+    --applewhite: #fbfbfb;
+    --darkturq: #4eb3b5;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--applewhite);
+    color: var(--darkblue);
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* Set the direction to RTL */
+}
+
+header {
+    background-color: var(--darkblue);
+    padding: 20px;
+    text-align: center;
+}
+
+header a img {
+    vertical-align: middle;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    background: var(--applewhite);
+    margin: 0 auto;
+    padding: 25px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: right; /* Align text to the right */
+}
+
+label {
+    color: var(--darkblue);
+    display: block;
+    margin-bottom: 5px;
+    text-align: right; /* Align labels to the right */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"],
+input[type="file"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--darkblue);
+    border-radius: 20px;
+    text-align: right; /* Align text inside inputs to the right */
+}
+
+input[type="submit"] {
+    background-color: var(--darkblue);
+    color: var(--applewhite);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 100px; /* Adjusted margin for RTL */
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: var(--darkturq); 
+    color: var(--applewhite); 
+}
+/* 
+p#answer{
+    visibility:hidden;
+} */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--darkblue);
+    color: var(--applewhite);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+}
+
+.styled-button {
+    background-color: #1f3681;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* CSS styles for button on hover */
+.styled-button:hover {
+    background-color: #000000;
+}
