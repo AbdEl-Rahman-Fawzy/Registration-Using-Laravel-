@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <a href="index.html" title="الذهاب إلى صفحة التسجيل"><img src="{{asset('front-assets')}}/Uploads/registration-form.png" alt="تسجيل" width="70"></a>
+            <a href="indexAR" title="الذهاب إلى صفحة التسجيل"><img src="{{asset('front-assets')}}/Uploads/registration-form.png" alt="تسجيل" width="70"></a>
         </header>
         <h1>نموذج التسجيل</h1>
         <form action="/register" method="POST">
