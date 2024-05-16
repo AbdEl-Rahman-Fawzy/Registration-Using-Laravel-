@@ -6,16 +6,11 @@
         <title>Index</title>
         <link rel="icon" href="{{asset('front-assets')}}/Uploads/registration-form.png">
         <link rel="stylesheet" href="{{asset('front-assets')}}/edit.css">
-
     </head>
     <body>
         <header>
             <a href="index.html"title="Go To Registeration Page"><img src="{{asset('front-assets')}}/Uploads/registration-form.png" alt="Register" width="70"></a>
         </header>
-        <div class="heading">
-            <h2>Registeration</h2>
-            
-        </div>
         <h1>Registration Form</h1>
         <form action="/register" method="POST">
         @csrf
@@ -43,7 +38,7 @@
         <label for="image">Image:</label><br>
         <input type="file" id="image" name="image"><br><br>
 
-        <button type="submit">Register</button>
+        <button type="submit" class="styled-button">Register</button>
     </form>
         <div id="errorMessages"></div>
         <script> src="{{asset('front-assets')}}/javascript/clientValidations.js"</script>
