@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-    <head>
-        <meta charset="utf-8" />
-        <title>نموذج التسجيل</title>
-        <link rel="icon" href="{{asset('front-assets')}}/Uploads/registration-form.png">
-        <link rel="stylesheet" href="{{asset('front-assets')}}/editAR.css">
-    </head>
-    <body>
-        <header>
-            <a href="indexAR" title="الذهاب إلى صفحة التسجيل"><img src="{{asset('front-assets')}}/Uploads/registration-form.png" alt="تسجيل" width="70"></a>
-        </header>
+@extends('layout.master')
+
+@section('title','انشاء حساب')
+
+@section('content')
+
         <h1>نموذج التسجيل</h1>
         <form action="/register" method="POST">
             @csrf
@@ -43,8 +37,4 @@
         <script src="{{asset('front-assets')}}/javascript/clientValidations.js"></script>
         <!-- <script src="{{asset('front-assets')}}/javascript/API_Ops.js"></script> -->
 
-        <footer>
-            <h4>&copy; 2024 <span>FCAI-CU</span>. جميع الحقوق محفوظة</h4>
-        </footer>
-    </body>
-</html>
+ @endsection

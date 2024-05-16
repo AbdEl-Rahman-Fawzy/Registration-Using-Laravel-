@@ -14,7 +14,7 @@
         </header>
         <main>
             <h2>To proceed to the registration form please click on the icon below</h2>
-            <a href="index" title="Go To Registration Page"><img src="{{asset('front-assets')}}/Uploads/registration-form.png" alt="Register" width="70"></a>
+            <a href="index.html" title="Go To Registration Page"><img src="{{asset('front-assets')}}/Uploads/registration-form.png" alt="Register" width="70"></a>
         </main>
         <footer>
             <h4>&copy; 2024 <span>FCAI-CU</span>. All rights reserved</h4>

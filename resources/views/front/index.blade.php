@@ -1,16 +1,8 @@
+@extends('layout.master')
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Index</title>
-        <link rel="icon" href="{{asset('front-assets')}}/Uploads/registration-form.png">
-        <link rel="stylesheet" href="{{asset('front-assets')}}/edit.css">
-    </head>
-    <body>
-        <header>
-            <a href="index.html"title="Go To Registeration Page"><img src="{{asset('front-assets')}}/Uploads/registration-form.png" alt="Register" width="70"></a>
-        </header>
+@section('title','Registration')
+
+@section('content')
         <h1>Registration Form</h1>
         <form action="/register" method="POST">
         @csrf
@@ -44,9 +36,4 @@
         <script> src="{{asset('front-assets')}}/javascript/clientValidations.js"</script>
         <!-- <script  src="{{asset('front-assets')}}/javascript/API_Ops.js"></script>-->
 
-        <footer>
-            <h4>&copy; 2024 <span>FCAI-CU</span>. All rights reserved</h4>
-        </footer>
-
-    </body>
-</html>
+   @endsection
