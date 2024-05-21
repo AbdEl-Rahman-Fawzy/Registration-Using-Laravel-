@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <a href="index" title="الذهاب إلى صفحة التسجيل"><img src="{{asset('front-assets')}}/Uploads/registration-form.png" alt="تسجيل" width="70"></a>
+            <a href="/" title="الذهاب إلى صفحة التسجيل"><img src="{{asset('front-assets')}}/Uploads/registration-form.png" alt="تسجيل" width="70"></a>
         <a href="index" class="language-button">English</a>
         </header>
     </body>

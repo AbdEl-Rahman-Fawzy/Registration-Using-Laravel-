@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Http\Controllers\MailController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 
 class UserController extends Controller
 {
+    
     /**
      * Display the registration form.
      *
@@ -61,9 +64,10 @@ class UserController extends Controller
                 'birthdate' => $request->birthdate,
                 'image' => $request->image,
             ]);
-    
-            // Return success response with user data
-            return response()->json(['success' => true, 'data' => $user], 200);
+            $mailController = new MailController();
+            $mailController->sendEmail($request->email);
+            return response()->json(['success' => true, 'data' => $user, 'message' => 'Email sent successfully'], 200);
+        } catch (\Exception $e) {
         } catch (\Exception $e) {
             // Log the exception details for debugging
             Log::error("Exception occurred during user registration: {$e->getMessage()} in {$e->getFile()} at line {$e->getLine()}\n{$e->getTraceAsString()}");

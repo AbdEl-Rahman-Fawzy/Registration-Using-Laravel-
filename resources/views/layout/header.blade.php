@@ -9,7 +9,7 @@
     <body>
         <header>
             
-        <a href="index"title="Go To Registeration Page"><img src="{{asset('front-assets')}}/Uploads/registration-form.png" alt="Register" width="70"></a>
+        <a href="/"title="Go To Registeration Page"><img src="{{asset('front-assets')}}/Uploads/registration-form.png" alt="Register" width="70"></a>
     <a href="AR"class="language-button">العربية</a>    
     </header>
     </body>

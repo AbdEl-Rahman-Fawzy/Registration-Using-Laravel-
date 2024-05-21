@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.masterAR')
 
 @section('title','انشاء حساب')
 
