@@ -19,16 +19,15 @@ class WelcomeEmail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct($mailmessage, $subject)
+    public function __construct($email,$userName)
     {
-        $this->mailmessage = $mailmessage;
-        $this->subject1 = $subject;
+        return $this->view('mail.new_registered_user',['variableName' => $userName,'variableEmail' => $email])->subject("New Registered User");
     }
 
     /**
      * Build the message.
      */
-    public function build()
+    /*public function build()
     {
         return $this->from('hazemnasser3050@gmail.com', 'Hazem Nasser')
                     ->view('mail_template.registration')
@@ -42,6 +41,6 @@ class WelcomeEmail extends Mailable
         return new Envelope(
             subject: 'Welcome to Our Platform',
         );
-    }
+    }*/
 
 }
